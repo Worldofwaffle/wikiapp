@@ -1,10 +1,28 @@
 Rails.application.routes.draw do
-  root "application#hello"
-  get 'welcome/index'
+  
+  get 'collaborators/index'
 
-  get 'welcome/about'
+  get 'collaborators/show'
+
+  get 'collaborators/new'
+
+  get 'collaborators/edit'
+
+  get 'wiki/index'
+
+  get 'wiki/show'
+
+  get 'wiki/new'
+
+  get 'wiki/edit'
+
+devise_for :users
+  
+  
+ get "welcome/index"
+  get "welcome/about"
+
    root to: 'welcome#index'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

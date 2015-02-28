@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,6 +37,10 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'figaro', '1.0'
+gem 'faker'
+gem 'pundit'
+gem 'stripe'
 
 # Use unicorn as the app server
 # gem 'unicorn'
